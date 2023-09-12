@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { styled } from "styled-components";
 import { FaUserDoctor } from "react-icons/fa6";
+import { Link } from "react-router-dom";
+
 
 const Header = () => {
 
@@ -26,14 +28,14 @@ const Header = () => {
       </Logo>
       <Nav bar={bar}>
         <span>
-          <a href="#home" onClick={humBergerUnset}>Home</a>
+          <Link to="/home" onClick={humBergerUnset}>Home</Link>
         </span>
         <span>
-          <a href="#home" onClick={humBergerUnset}>My Appointments</a>
+          <Link to="/my_appointments" onClick={humBergerUnset}>My Appointments</Link>
         </span>
-       
+        
         <span>
-          <a href="#footer" onClick={humBergerUnset}>Contact Us</a>
+          <Link to="/contact_us" onClick={humBergerUnset}>Contact Us</Link>
         </span>
       </Nav>
       <div
